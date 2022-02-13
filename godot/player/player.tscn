@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://player/spritesheet.png" type="Texture" id=1]
 [ext_resource path="res://player/player.gd" type="Script" id=2]
@@ -210,8 +210,20 @@ tracks/1/keys = {
 "values": [ false ]
 }
 
+[sub_resource type="AnimationNodeAnimation" id=20]
+animation = "go_long"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "go_mid"
+
 [sub_resource type="AnimationNodeAnimation" id=11]
 animation = "go_short"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "idle_long"
+
+[sub_resource type="AnimationNodeAnimation" id=23]
+animation = "idle_mid"
 
 [sub_resource type="AnimationNodeAnimation" id=12]
 animation = "idle_short"
@@ -220,13 +232,34 @@ animation = "idle_short"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=14]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=26]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
 [sub_resource type="AnimationNodeStateMachine" id=15]
+states/go_long/node = SubResource( 20 )
+states/go_long/position = Vector2( 382.15, 274.812 )
+states/go_mid/node = SubResource( 21 )
+states/go_mid/position = Vector2( 435.75, 176.562 )
 states/go_short/node = SubResource( 11 )
 states/go_short/position = Vector2( 464.5, 67 )
+states/idle_long/node = SubResource( 22 )
+states/idle_long/position = Vector2( 176.15, 265.312 )
+states/idle_mid/node = SubResource( 23 )
+states/idle_mid/position = Vector2( 236.75, 175.562 )
 states/idle_short/node = SubResource( 12 )
 states/idle_short/position = Vector2( 268, 58.5 )
-transitions = [ "idle_short", "go_short", SubResource( 13 ), "go_short", "idle_short", SubResource( 14 ) ]
+transitions = [ "idle_short", "go_short", SubResource( 13 ), "go_short", "idle_short", SubResource( 14 ), "idle_mid", "go_mid", SubResource( 24 ), "go_mid", "idle_mid", SubResource( 25 ), "idle_short", "idle_mid", SubResource( 26 ), "idle_mid", "idle_long", SubResource( 27 ), "idle_long", "go_long", SubResource( 28 ), "go_long", "idle_long", SubResource( 29 ) ]
 start_node = "idle_short"
+graph_offset = Vector2( 91.35, 39.375 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=16]
 

@@ -11,7 +11,7 @@ resource_name = "bob"
 length = 0.6
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("end/sprite:position")
+tracks/0/path = NodePath("end2/sprite:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -31,8 +31,8 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=3]
-radius = 35.0
+[sub_resource type="CircleShape2D" id=5]
+radius = 27.0185
 
 [node name="piece" type="Area2D"]
 position = Vector2( 2442, 307 )
@@ -47,10 +47,10 @@ anims/bob = SubResource( 2 )
 position = Vector2( 0, 4.19319 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 3 )
+position = Vector2( 0, 6 )
+shape = SubResource( 5 )
 
 [connection signal="body_entered" from="." to="." method="_on_piece_body_entered"]

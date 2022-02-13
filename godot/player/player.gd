@@ -9,6 +9,9 @@ onready var anim = $anim
 onready var animtree = $animtree.get("parameters/playback")
 onready var sadanim = $sad
 
+var go = ["go_short", "go_mid", "go_long"]
+var idle = ["idle_short", "idle_mid", "idle_long"]
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screensize = get_viewport_rect().size
@@ -24,9 +27,9 @@ func position_ghost(delta):
 	
 	if position.distance_to(mousepos) > 50:
 		velocity = Vector2(speed,0).rotated(rotation)
-		animtree.travel("go_short")
+		animtree.travel(go[base.level-1])
 	else:
-		animtree.travel("idle_short")
+		animtree.travel(idle[base.level-1])
 
 		
 	if (position.angle_to_point(mousepos) > (PI/2) || position.angle_to_point(mousepos) < -(PI/2) ):

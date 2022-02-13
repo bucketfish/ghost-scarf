@@ -7,7 +7,7 @@ extends Node2D
 
 signal next
 
-var spaces = [-156, -191, -231, -262, -295, -335, -391, -447, -503, -566, -638, -670, -706, -742, -799, -832, -888, -943, -983, -1047 ]
+var spaces = [357, 318, 278, 238, 180, 138, 99, 59, 22, -19, -54, -91, -146, -185, -225, -265, -303, -359, -394, -428, -468, -516]
 onready var dialogue = $dialogue
 
 onready var base = get_node("/root/base")
@@ -23,13 +23,14 @@ func _input(event):
 		
 func play():
 	var cur = 1
-	while cur < 20:
+	while cur < 22:
 		yield(self, "next")
 		dialogue.position.y = spaces[cur]
 		cur += 1
 	ended()
 		
 func ended():
-	base.startgame()
+	base.endgame()
+	yield(base.changeanim, "animation_finished")
 	queue_free()
 	
