@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://around.png" type="Texture" id=1]
+[ext_resource path="res://environment/piece.tscn" type="PackedScene" id=3]
+[ext_resource path="res://rooms/room.gd" type="Script" id=4]
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 0, 600 )
+b = Vector2( 2700, 600 )
+
+[sub_resource type="SegmentShape2D" id=3]
+b = Vector2( 2700, 0 )
+
+[sub_resource type="SegmentShape2D" id=4]
+b = Vector2( 0, 600 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( 2700, 0 )
+b = Vector2( 2700, 600 )
+
+[node name="room" type="Node2D" groups=["room"]]
+script = ExtResource( 4 )
+
+[node name="around" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="end" parent="." instance=ExtResource( 3 )]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 5 )

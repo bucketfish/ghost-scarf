@@ -1,0 +1,1052 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://cutscenes/screen.png" type="Texture" id=1]
+[ext_resource path="res://cutscenes/message.png" type="Texture" id=2]
+[ext_resource path="res://christmas lights.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://cutscenes/texting.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+font_data = ExtResource( 3 )
+
+[node name="cutscene" type="Node2D"]
+z_index = 10
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.643137, 0.670588, 0.796078, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialogue" type="Node2D" parent="."]
+position = Vector2( 0, -1080 )
+
+[node name="line" type="Node2D" parent="dialogue"]
+
+[node name="back" type="NinePatchRect" parent="dialogue/line"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 394.0
+margin_top = 129.0
+margin_right = 569.0
+margin_bottom = 183.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line"]
+margin_left = 404.0
+margin_top = 139.0
+margin_right = 581.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "and it was so wild! super fun too"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line2" type="Node2D" parent="dialogue"]
+position = Vector2( 0, 59 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line2"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 394.0
+margin_top = 129.0
+margin_right = 598.0
+margin_bottom = 164.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line2"]
+margin_left = 404.0
+margin_top = 139.0
+margin_right = 603.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "go with me next time :)"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line3" type="Node2D" parent="dialogue"]
+position = Vector2( 46, 103 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line3"]
+margin_left = 545.0
+margin_top = 129.0
+margin_right = 597.0
+margin_bottom = 164.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line3"]
+margin_left = 557.0
+margin_top = 139.0
+margin_right = 597.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "ofc!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line4" type="Node2D" parent="dialogue"]
+position = Vector2( 46, 143 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line4"]
+margin_left = 407.0
+margin_top = 129.0
+margin_right = 597.0
+margin_bottom = 164.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line4"]
+margin_left = 413.0
+margin_top = 139.0
+margin_right = 597.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "that sounds really fun"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line5" type="Node2D" parent="dialogue"]
+position = Vector2( 46, 183 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line5"]
+margin_left = 442.0
+margin_top = 129.0
+margin_right = 597.0
+margin_bottom = 183.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line5"]
+margin_left = 449.0
+margin_top = 139.0
+margin_right = 597.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "sorry i couldnt go this time :(("
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line6" type="Node2D" parent="dialogue"]
+position = Vector2( -48, 242 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line6"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 442.0
+margin_top = 129.0
+margin_right = 511.0
+margin_bottom = 165.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line6"]
+margin_left = 449.0
+margin_top = 139.0
+margin_right = 597.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "it's ok!!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line7" type="Node2D" parent="dialogue"]
+position = Vector2( -48, 283 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line7"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 442.0
+margin_top = 129.0
+margin_right = 646.0
+margin_bottom = 163.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line7"]
+margin_left = 449.0
+margin_top = 139.0
+margin_right = 646.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "totally understandable"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line8" type="Node2D" parent="dialogue"]
+position = Vector2( -48, 322 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line8"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 442.0
+margin_top = 129.0
+margin_right = 662.0
+margin_bottom = 163.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line8"]
+margin_left = 449.0
+margin_top = 139.0
+margin_right = 667.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "good luck with your exam!"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line9" type="Node2D" parent="dialogue"]
+position = Vector2( -21, 366 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line9"]
+margin_left = 516.0
+margin_top = 129.0
+margin_right = 662.0
+margin_bottom = 163.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line9"]
+margin_left = 527.0
+margin_top = 139.0
+margin_right = 745.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "tysm! love you~"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line10" type="Node2D" parent="dialogue"]
+position = Vector2( -121, 407 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line10"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 516.0
+margin_top = 129.0
+margin_right = 640.0
+margin_bottom = 183.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line10"]
+margin_left = 527.0
+margin_top = 139.0
+margin_right = 670.0
+margin_bottom = 183.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "love you too! study hard~"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line11" type="Node2D" parent="dialogue"]
+position = Vector2( -32, 474 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line11"]
+modulate = Color( 0.533333, 0.737255, 1, 1 )
+margin_left = 516.0
+margin_top = 129.0
+margin_right = 585.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line11"]
+margin_left = 526.0
+margin_top = 137.0
+margin_right = 669.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "today"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line12" type="Node2D" parent="dialogue"]
+position = Vector2( 51, 516 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line12"]
+margin_left = 509.0
+margin_top = 129.0
+margin_right = 586.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line12"]
+margin_left = 516.0
+margin_top = 137.0
+margin_right = 659.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "hey love"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line13" type="Node2D" parent="dialogue"]
+position = Vector2( 51, 549 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line13"]
+margin_left = 468.0
+margin_top = 129.0
+margin_right = 586.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line13"]
+margin_left = 473.0
+margin_top = 137.0
+margin_right = 616.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "hows it going?"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line14" type="Node2D" parent="dialogue"]
+position = Vector2( -76, 586 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line14"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 468.0
+margin_top = 129.0
+margin_right = 564.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line14"]
+margin_left = 473.0
+margin_top = 137.0
+margin_right = 616.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "it's so cold"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line15" type="Node2D" parent="dialogue"]
+position = Vector2( -76, 619 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line15"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 468.0
+margin_top = 129.0
+margin_right = 667.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line15"]
+margin_left = 473.0
+margin_top = 137.0
+margin_right = 681.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "because you're not here"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line16" type="Node2D" parent="dialogue"]
+position = Vector2( -76, 653 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line16"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 468.0
+margin_top = 129.0
+margin_right = 498.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line16"]
+margin_left = 475.0
+margin_top = 137.0
+margin_right = 683.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = ":("
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line17" type="Node2D" parent="dialogue"]
+position = Vector2( 138, 697 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line17"]
+margin_left = 364.0
+margin_top = 129.0
+margin_right = 498.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line17"]
+margin_left = 369.0
+margin_top = 137.0
+margin_right = 577.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "alksdhfkajnfkja"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line18" type="Node2D" parent="dialogue"]
+position = Vector2( 140, 730 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line18"]
+margin_left = 319.0
+margin_top = 129.0
+margin_right = 498.0
+margin_bottom = 181.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line18"]
+margin_left = 286.0
+margin_top = 137.0
+margin_right = 494.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[right] im actually studying right now"
+text = " im actually studying right now"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line32" type="Node2D" parent="dialogue"]
+position = Vector2( 140, 785 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line32"]
+margin_left = 278.0
+margin_top = 129.0
+margin_right = 498.0
+margin_bottom = 181.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line32"]
+margin_left = 272.0
+margin_top = 137.0
+margin_right = 494.0
+margin_bottom = 181.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[right] learning about important dates in history"
+text = " learning about important dates in history"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line19" type="Node2D" parent="dialogue"]
+position = Vector2( 140, 841 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line19"]
+margin_left = 373.0
+margin_top = 129.0
+margin_right = 498.0
+margin_bottom = 179.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line19"]
+margin_left = 370.0
+margin_top = 137.0
+margin_right = 493.0
+margin_bottom = 198.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[right] wanna be one of them? :)"
+text = " wanna be one of them? :)"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line20" type="Node2D" parent="dialogue"]
+position = Vector2( 59, 901 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line20"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 329.0
+margin_top = 129.0
+margin_right = 503.0
+margin_bottom = 182.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line20"]
+margin_left = 338.0
+margin_top = 137.0
+margin_right = 503.0
+margin_bottom = 182.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "oh my god nmfbsxbvnmskvcmn"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line21" type="Node2D" parent="dialogue"]
+position = Vector2( 59, 958 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line21"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 329.0
+margin_top = 129.0
+margin_right = 503.0
+margin_bottom = 197.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line21"]
+margin_left = 338.0
+margin_top = 137.0
+margin_right = 503.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "well yes but also i'm about to freeze to death
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line22" type="Node2D" parent="dialogue"]
+position = Vector2( 140, 1030 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line22"]
+margin_left = 454.0
+margin_top = 129.0
+margin_right = 497.0
+margin_bottom = 161.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line22"]
+margin_left = 465.0
+margin_top = 137.0
+margin_right = 630.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "aw
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line23" type="Node2D" parent="dialogue"]
+position = Vector2( 71, 1065 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line23"]
+margin_left = 454.0
+margin_top = 129.0
+margin_right = 567.0
+margin_bottom = 161.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line23"]
+margin_left = 465.0
+margin_top = 137.0
+margin_right = 630.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "ill come over"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line24" type="Node2D" parent="dialogue"]
+position = Vector2( 71, 1100 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line24"]
+margin_left = 436.0
+margin_top = 129.0
+margin_right = 567.0
+margin_bottom = 161.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line24"]
+margin_left = 442.0
+margin_top = 137.0
+margin_right = 607.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "ill bring a scarf"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line25" type="Node2D" parent="dialogue"]
+position = Vector2( -43, 1136 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line25"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 436.0
+margin_top = 129.0
+margin_right = 610.0
+margin_bottom = 181.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line25"]
+margin_left = 442.0
+margin_top = 137.0
+margin_right = 607.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "yes !!! thank you my lord and savior
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line26" type="Node2D" parent="dialogue"]
+position = Vector2( -43, 1191 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line26"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 436.0
+margin_top = 129.0
+margin_right = 515.0
+margin_bottom = 159.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line26"]
+margin_left = 442.0
+margin_top = 137.0
+margin_right = 607.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "love you"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line27" type="Node2D" parent="dialogue"]
+position = Vector2( -43, 1224 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line27"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 436.0
+margin_top = 129.0
+margin_right = 662.0
+margin_bottom = 180.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line27"]
+margin_left = 442.0
+margin_top = 137.0
+margin_right = 657.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "watch out tho there's lots of the sad around today
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line28" type="Node2D" parent="dialogue"]
+position = Vector2( -43, 1279 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line28"]
+modulate = Color( 0.890196, 0.752941, 0.827451, 1 )
+margin_left = 436.0
+margin_top = 129.0
+margin_right = 596.0
+margin_bottom = 181.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line28"]
+margin_left = 442.0
+margin_top = 137.0
+margin_right = 607.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "don't touch them and stay safe"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line29" type="Node2D" parent="dialogue"]
+position = Vector2( 51, 1343 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line29"]
+margin_left = 473.0
+margin_top = 129.0
+margin_right = 596.0
+margin_bottom = 162.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line29"]
+margin_left = 479.0
+margin_top = 137.0
+margin_right = 644.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "aw thank you"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line30" type="Node2D" parent="dialogue"]
+position = Vector2( 51, 1343 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line30"]
+margin_left = 473.0
+margin_top = 129.0
+margin_right = 596.0
+margin_bottom = 162.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line30"]
+margin_left = 479.0
+margin_top = 137.0
+margin_right = 644.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "aw thank you"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="line31" type="Node2D" parent="dialogue"]
+position = Vector2( 18, 1379 )
+
+[node name="back" type="NinePatchRect" parent="dialogue/line31"]
+margin_left = 473.0
+margin_top = 129.0
+margin_right = 629.0
+margin_bottom = 182.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 68.4537, 101.764, 167.351, 110.921 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="dialogue/line31"]
+margin_left = 455.0
+margin_top = 137.0
+margin_right = 620.0
+margin_bottom = 197.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[right]love you too! see you soon~
+"
+text = "love you too! see you soon~
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Screen" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
