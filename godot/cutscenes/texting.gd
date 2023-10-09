@@ -11,6 +11,7 @@ var spaces = [-156, -191, -231, -262, -295, -335, -391, -447, -503, -566, -638, 
 onready var dialogue = $dialogue
 
 onready var base = get_node("/root/base")
+onready var sfx = $sfx
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,8 +26,12 @@ func play():
 	var cur = 1
 	while cur < 20:
 		yield(self, "next")
+		sfx.stream_paused = false
+		yield(get_tree().create_timer(0.3), "timeout")
+		sfx.stream_paused = true
 		dialogue.position.y = spaces[cur]
 		cur += 1
+	yield(self, "next")
 	ended()
 		
 func ended():

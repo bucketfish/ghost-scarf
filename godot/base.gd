@@ -111,7 +111,7 @@ func change_scene(tolevel):
 	
 	changeanim.play_backwards("fade")
 	yield(changeanim, "animation_finished")
-	yield(get_tree().create_timer(0.2), "timeout")
+	yield(get_tree().create_timer(0.01), "timeout")
 	state = "play"
 	
 func die():

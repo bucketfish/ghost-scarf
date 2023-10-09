@@ -10,9 +10,11 @@ config_version=4
 
 [application]
 
-config/name="ghost love"
+config/name="ghost&scarf"
 config/description="oh to be a ghost bringing a scarf to my beloved"
 run/main_scene="res://base.tscn"
+boot_splash/image="res://splash.png"
+boot_splash/bg_color=Color( 0.890196, 0.752941, 0.827451, 1 )
 config/icon="res://icon.png"
 
 [display]
